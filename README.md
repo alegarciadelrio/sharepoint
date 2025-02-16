@@ -1,4 +1,4 @@
-# Sharepoint management scripts
+# Sharepoint Toolbox
 This is a set of useful scripts to manage a sharepoint site.
 
 DeleteFolderSharepoint.ps1 : Script to delete a folder in sharepoint.
