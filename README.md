@@ -1,5 +1,9 @@
 # Sharepoint Toolbox
-This is a set of useful scripts to manage a sharepoint site.
+🔭 This is a set of useful scripts to manage a sharepoint site.
+
+<p>
+  <img alt="PowerShell" src="https://img.shields.io/badge/PowerShell-black?style=flat-square&logoColor=white" />
+</p>
 
 DeleteFolderSharepoint.ps1 : Script to delete a folder in sharepoint.
 
