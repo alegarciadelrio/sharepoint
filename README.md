@@ -3,6 +3,7 @@
 
 <p>
   <img alt="PowerShell" src="https://img.shields.io/badge/PowerShell-black?style=flat-square&logoColor=white" />
+  <img alt="PowerShell" src="https://img.shields.io/badge/Sharepoint-%23258AAF?style=flat-square&logo=sitepoint&logoColor=white" />
 </p>
 
 ## DeleteFolderSharepoint.ps1
