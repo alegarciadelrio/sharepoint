@@ -6,7 +6,7 @@
   <img alt="SharePoint" src="https://img.shields.io/badge/Sharepoint-%23258AAF?style=flat-square&logo=sitepoint&logoColor=white" />
 </p>
 
-## Table of Contents
+## 📑 Table of Contents
 - [Overview](#overview)
 - [Requirements](#requirements)
 - [Repository Structure](#repository-structure)
@@ -21,17 +21,17 @@
 - [Contributing](#contributing)
 - [License](#license)
 
-## Overview
+## 📋 Overview
 This repository contains a set of PowerShell scripts designed to automate common SharePoint administration tasks. These scripts help streamline site management, version control, permission management, and content recovery operations.
 
-## Requirements
+## ⚙️ Requirements
 - PowerShell 5.1 or higher
 - SharePoint Online Management Shell
 - Appropriate SharePoint permissions (Site Collection Administrator or equivalent)
 - Microsoft 365 account with administrative access
 - PnP PowerShell module (for some scripts)
 
-## Repository Structure
+## 📁 Repository Structure
 
 This repository contains the following PowerShell scripts for SharePoint management:
 
@@ -46,7 +46,7 @@ This repository contains the following PowerShell scripts for SharePoint managem
 
 All scripts follow consistent parameter naming conventions and error handling patterns to ensure reliability across different SharePoint environments. They can be used independently or as part of a larger workflow to address specific SharePoint administration challenges.
 
-## Installation
+## 💾 Installation
 1. Clone this repository or download the scripts to your local machine:
    ```
    git clone https://github.com/yourusername/sharepoint-toolbox.git
@@ -61,7 +61,7 @@ All scripts follow consistent parameter naming conventions and error handling pa
    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
    ```
 
-## Usage
+## 🚀 Usage
 Before running any script, you should connect to your SharePoint Online site:
 
 ```powershell
@@ -70,7 +70,7 @@ Connect-SPOService -Url https://yourtenant-admin.sharepoint.com
 Connect-PnPOnline -Url https://yourtenant.sharepoint.com/sites/yoursite -Interactive
 ```
 
-### DeleteFolderSharepoint.ps1
+### 🗑️ DeleteFolderSharepoint.ps1
 A powerful script for deleting folders from SharePoint document libraries. This script handles the complexities of SharePoint's folder structure and permissions, ensuring complete removal of the target folder and all its contents.
 
 **Key Features:**
@@ -91,7 +91,7 @@ A powerful script for deleting folders from SharePoint document libraries. This 
 .\DeleteFolderSharepoint.ps1 -SiteUrl "https://yourtenant.sharepoint.com/sites/yoursite" -FolderPath "/Shared Documents/FolderToDelete"
 ```
 
-### DeleteVersionsFileSharepoint.ps1
+### 📚 DeleteVersionsFileSharepoint.ps1
 This script manages version history for individual files in SharePoint, helping organizations optimize storage usage and improve site performance by removing unnecessary file versions while preserving essential revision history.
 
 **Key Features:**
@@ -113,7 +113,7 @@ This script manages version history for individual files in SharePoint, helping 
 .\DeleteVersionsFileSharepoint.ps1 -SiteUrl "https://yourtenant.sharepoint.com/sites/yoursite" -FilePath "/Shared Documents/YourFile.docx" -KeepVersions 5
 ```
 
-### NewRoleStructure.ps1
+### 🔐 NewRoleStructure.ps1
 A comprehensive permission management script that transforms individual user permissions into a more maintainable role-based security model. This script is essential for organizations scaling their SharePoint implementation or implementing governance policies.
 
 **Key Features:**
@@ -144,7 +144,7 @@ user@example.com,Contribute,Member,Site Members
 admin@example.com,Full Control,Owner,Site Owners
 ```
 
-### RemovePerseverationHold.ps1
+### 🔓 RemovePerseverationHold.ps1
 This specialized script addresses compliance and retention policy challenges by removing preservation holds from SharePoint content. It's particularly useful for organizations that need to manage content lifecycle after legal or regulatory hold periods have expired.
 
 **Key Features:**
@@ -169,7 +169,7 @@ This specialized script addresses compliance and retention policy challenges by 
 
 **Note:** This script requires appropriate eDiscovery or Compliance administrator permissions in addition to SharePoint administrator rights.
 
-### RemoveVersionHistory.ps1
+### 🧹 RemoveVersionHistory.ps1
 A powerful bulk operation script that manages version history across entire folders or document libraries in SharePoint. This script is essential for storage optimization and performance improvement in SharePoint environments with extensive document versioning.
 
 **Key Features:**
@@ -195,7 +195,7 @@ A powerful bulk operation script that manages version history across entire fold
 .\RemoveVersionHistory.ps1 -SiteUrl "https://yourtenant.sharepoint.com/sites/yoursite" -FolderPath "/Shared Documents/YourFolder" -KeepVersions 3
 ```
 
-### RestoreRecycleBin.ps1
+### ♻️ RestoreRecycleBin.ps1
 A comprehensive data recovery script that simplifies the process of restoring deleted content from the SharePoint recycle bin. This script handles the complexities of restoring folder hierarchies with their contents while maintaining original metadata and permissions.
 
 **Key Features:**
@@ -226,7 +226,7 @@ A comprehensive data recovery script that simplifies the process of restoring de
 .\RestoreRecycleBin.ps1 -SiteUrl "https://yourtenant.sharepoint.com/sites/yoursite" -FolderName "FolderToRestore" -DeletedBy "user@example.com" -RestorePoint "2023-01-01" -ConflictResolution "CreateUnique"
 ```
 
-## Contributing
+## 👥 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Fork the repository
@@ -235,5 +235,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
+## ⚖️ License
 This project is licensed under the MIT License - see the LICENSE file for details.
